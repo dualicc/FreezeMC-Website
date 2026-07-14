@@ -50,9 +50,8 @@
             <li><a href="#home" class="hover:text-ice transition">Home</a></li>
             <li><a href="https://forums.freezemc.net" target="_blank" class="hover:text-ice transition">Forums</a></li>
             <li><a href="#features" class="hover:text-ice transition">Features</a></li>
-            <li><a href="#" class="hover:text-ice transition">Store</a></li>
-            <li><a href="#" class="hover:text-ice transition">Vote</a></li>
-            <li><a href="#" class="hover:text-ice transition">Leaderboards</a></li>
+            <li><a href="#store" class="hover:text-ice transition">Store</a></li>
+            <li><a href="#leaderboards" class="hover:text-ice transition">Leaderboards</a></li>
         </ul>
         <a href="https://discord.gg/freezemc" class="bg-ice/10 border border-ice/20 text-ice px-6 py-2 rounded-full hover:bg-ice hover:text-navy transition font-bold text-sm tracking-widest">DISCORD</a>
     </nav>
@@ -87,9 +86,35 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="relative z-10 py-20 bg-white/5 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-8 text-center">
+            <div>
+                <div class="text-ice text-4xl font-display font-black mb-2 counter" data-target="412">0</div>
+                <div class="text-white/40 text-xs font-bold tracking-widest uppercase">Online</div>
+            </div>
+            <div>
+                <div class="text-ice text-4xl font-display font-black mb-2 counter" data-target="15200">0</div>
+                <div class="text-white/40 text-xs font-bold tracking-widest uppercase">Total Players</div>
+            </div>
+            <div>
+                <div class="text-ice text-4xl font-display font-black mb-2 counter" data-target="4800">0</div>
+                <div class="text-white/40 text-xs font-bold tracking-widest uppercase">Discord Members</div>
+            </div>
+            <div>
+                <div class="text-ice text-4xl font-display font-black mb-2 counter" data-target="1240">0</div>
+                <div class="text-white/40 text-xs font-bold tracking-widest uppercase">Votes Monthly</div>
+            </div>
+            <div class="col-span-2 lg:col-span-1">
+                <div class="text-ice text-4xl font-display font-black mb-2 counter" data-target="3">0</div>
+                <div class="text-white/40 text-xs font-bold tracking-widest uppercase">Years Online</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="relative z-10 py-24 px-6 lg:px-20 max-w-7xl mx-auto">
-        <h2 class="font-display text-4xl font-bold text-center mb-16">Why Play <span class="text-ice">FreezeMC?</span></h2>
+        <h2 class="font-display text-4xl font-bold text-center mb-16 uppercase tracking-tighter italic">Why Play <span class="text-ice">FreezeMC?</span></h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="feature-card glass-card p-8 rounded-3xl border border-white/5 hover:border-ice/30 transition-all duration-500">
                 <div class="text-ice text-3xl mb-4 italic font-black">01</div>
@@ -109,7 +134,137 @@
             <div class="feature-card glass-card p-8 rounded-3xl border border-white/5 hover:border-ice/30 transition-all duration-500">
                 <div class="text-ice text-3xl mb-4 italic font-black">04</div>
                 <h3 class="font-bold text-xl mb-2">Cross-Play</h3>
-                <p class="text-white/50 text-sm">Play anywhere. Seamlessly join our world from both Minecraft Java and Bedrock editions.</p>
+                <p class="text-white/50 text-sm">Play anywhere. Seamlessly join our world from both Java and Bedrock editions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Preview -->
+    <section id="store" class="relative z-10 py-24 px-6 lg:px-20 bg-ice/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-display text-4xl font-bold uppercase tracking-tighter italic">Featured <span class="text-ice">Ranks</span></h2>
+                    <p class="text-white/40">Support the server and get premium perks.</p>
+                </div>
+                <a href="#" class="text-ice font-bold border-b border-ice/30 hover:border-ice transition pb-1">Visit Store</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-1 rounded-[2rem] border border-white/5 hover:scale-105 transition-transform duration-500">
+                    <div class="bg-navy/40 rounded-[1.9rem] p-8 text-center border border-white/5">
+                        <div class="text-ice/50 text-xs font-bold tracking-widest uppercase mb-4">Starter</div>
+                        <h3 class="text-3xl font-display font-black mb-6">FROST</h3>
+                        <ul class="text-white/50 text-sm space-y-3 mb-8">
+                            <li>+3 Set Homes</li>
+                            <li>Cyan Prefix</li>
+                            <li>Weekly Kit</li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-white/5 border border-white/10 font-bold hover:bg-white/10 transition">View Pack</button>
+                    </div>
+                </div>
+                <div class="glass-card p-1 rounded-[2rem] border border-ice/40 hover:scale-105 transition-transform duration-500 relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-ice text-navy text-[10px] font-black px-2 py-1 rounded">POPULAR</div>
+                    <div class="bg-navy/40 rounded-[1.9rem] p-8 text-center border border-white/5 shadow-[0_0_50px_rgba(91,192,255,0.1)]">
+                        <div class="text-ice text-xs font-bold tracking-widest uppercase mb-4">Premium</div>
+                        <h3 class="text-3xl font-display font-black mb-6">GLACIER</h3>
+                        <ul class="text-white/50 text-sm space-y-3 mb-8">
+                            <li>+10 Set Homes</li>
+                            <li>Icy Blue Prefix</li>
+                            <li>Daily Kit + Priority</li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-ice text-navy font-bold hover:shadow-[0_0_20px_rgba(91,192,255,0.3)] transition">View Pack</button>
+                    </div>
+                </div>
+                <div class="glass-card p-1 rounded-[2rem] border border-white/5 hover:scale-105 transition-transform duration-500">
+                    <div class="bg-navy/40 rounded-[1.9rem] p-8 text-center border border-white/5">
+                        <div class="text-ice/50 text-xs font-bold tracking-widest uppercase mb-4">Elite</div>
+                        <h3 class="text-3xl font-display font-black mb-6">BLIZZARD</h3>
+                        <ul class="text-white/50 text-sm space-y-3 mb-8">
+                            <li>Unlimited Homes</li>
+                            <li>Glow Effect</li>
+                            <li>Ultimate Kit + All Tags</li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-white/5 border border-white/10 font-bold hover:bg-white/10 transition">View Pack</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboards Section -->
+    <section id="leaderboards" class="relative z-10 py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+        <h2 class="font-display text-4xl font-bold text-center mb-16 uppercase tracking-tighter italic text-ice">Leaderboards</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Richest Players -->
+            <div class="glass-card rounded-3xl overflow-hidden border border-white/5">
+                <div class="bg-white/5 p-6 border-b border-white/5 flex justify-between items-center">
+                    <h3 class="font-bold uppercase tracking-widest text-sm text-ice">Richest Players</h3>
+                    <span class="text-[10px] text-white/30 font-bold">BALTOP</span>
+                </div>
+                <table class="w-full text-left text-sm">
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-ice w-12">#1</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Notch/24" class="rounded">
+                                Notch
+                            </td>
+                            <td class="p-4 text-right font-mono">$1,250,000</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-white/40 w-12">#2</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Dream/24" class="rounded">
+                                Dream
+                            </td>
+                            <td class="p-4 text-right font-mono">$980,000</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-white/40 w-12">#3</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Technoblade/24" class="rounded">
+                                Techno
+                            </td>
+                            <td class="p-4 text-right font-mono">$845,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Top Playtime -->
+            <div class="glass-card rounded-3xl overflow-hidden border border-white/5">
+                <div class="bg-white/5 p-6 border-b border-white/5 flex justify-between items-center">
+                    <h3 class="font-bold uppercase tracking-widest text-sm text-ice">Top Playtime</h3>
+                    <span class="text-[10px] text-white/30 font-bold">ACTIVE</span>
+                </div>
+                <table class="w-full text-left text-sm">
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-ice w-12">#1</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Player1/24" class="rounded">
+                                Steve
+                            </td>
+                            <td class="p-4 text-right font-mono">1,240h</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-white/40 w-12">#2</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Player2/24" class="rounded">
+                                Alex
+                            </td>
+                            <td class="p-4 text-right font-mono">980h</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-4 font-bold text-white/40 w-12">#3</td>
+                            <td class="p-4 flex items-center gap-3">
+                                <img src="https://mc-heads.net/avatar/Player3/24" class="rounded">
+                                FreezeFan
+                            </td>
+                            <td class="p-4 text-right font-mono">845h</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -119,7 +274,8 @@
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
             <div class="text-center lg:text-left">
                 <div class="font-display font-bold text-xl mb-2"><span class="text-ice">FREEZE</span>MC</div>
-                <p class="text-white/40 text-xs tracking-widest uppercase">The Ultimate Survival Experience</p>
+                <p class="text-white/40 text-xs tracking-widest uppercase italic">The Ultimate Survival Experience</p>
+                <p class="text-white/20 text-[10px] mt-4">Copyright &copy; 2026 FreezeMC. Not affiliated with Mojang AB.</p>
             </div>
             <div class="flex gap-8 text-white/40 text-xs font-bold tracking-widest uppercase">
                 <a href="#" class="hover:text-ice transition">Terms</a>
